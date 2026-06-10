@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classroom Finder</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h2 class="logo">Classroom Finder</h2>
+    <nav class="nav-links">
+      <button onclick="window.close()">Close</button>
+    </nav>
+  </header>
+
+  <main class="section">
+    <p class="section-label">Classroom Finder</p>
+    <h2>Search Teachers & Rooms</h2>
+
+    <div style="max-width:900px;">
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <input id="searchInput" placeholder="Search by name, room, or building" style="flex:1;padding:12px;border-radius:8px;border:1px solid #d1d5db;" />
+        <button class="primary-btn" id="searchBtn">Search</button>
+        <button class="secondary-btn" id="listBuildingBtn">List by Building</button>
+        <button class="secondary-btn" id="clearBtn">Clear</button>
+        <button class="secondary-btn" id="viewSourceBtn" onclick="window.open('Main.java','_blank')">View Java Source</button>
+        <button class="secondary-btn" onclick="window.open('classroom.js','_blank')">View JavaScript</button>
+      </div>
+
+      <div id="results" style="margin-top:20px;"></div>
+    </div>
+
+    <p style="margin-top:30px;color:#6b7280;font-weight:700;">Data source: data.txt (local)</p>
+  </main>
+
+  <script src="classroom.js"></script>
+</body>
+</html>
