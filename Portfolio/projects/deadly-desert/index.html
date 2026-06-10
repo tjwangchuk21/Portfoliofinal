@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Deadly Desert Map</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h2 class="logo">Deadly Desert Map</h2>
+    <nav class="nav-links">
+      <button onclick="window.close()">Close</button>
+    </nav>
+  </header>
+
+  <main class="section">
+    <p class="section-label">Deadly Desert Map</p>
+    <h2>Danger Spot Analyzer</h2>
+
+    <div style="max-width:900px;">
+      <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+        <label style="display:flex;align-items:center;gap:8px;">Danger threshold:
+          <input id="threshold" type="number" value="15" min="0" style="width:90px;padding:8px;border-radius:8px;border:1px solid #d1d5db;" />
+        </label>
+        <button class="primary-btn" id="analyzeBtn">Analyze</button>
+        <button class="secondary-btn" id="resetBtn">Reset</button>
+        <button class="secondary-btn" id="viewCodeBtn">View Java Source</button>
+      </div>
+
+      <div id="output" style="margin-top:24px;"></div>
+    </div>
+  </main>
+
+  <script src="deadly.js"></script>
+</body>
+</html>

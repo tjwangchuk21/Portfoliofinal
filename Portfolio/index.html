@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TJ Wangchuk | Professional Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <h2 class="logo">TJ Wangchuk</h2>
+
+    <nav class="nav-links">
+      <button onclick="scrollToSection('about')">About</button>
+      <button onclick="scrollToSection('projects')">Projects</button>
+      <button onclick="scrollToSection('experience')">Experience</button>
+      <button onclick="scrollToSection('resume')">Resume</button>
+      <button onclick="scrollToSection('contact')">Contact</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="tagline">Software Developer • EMS Volunteer • Athlete • Leader</p>
+
+      <h1>Hi, I’m <span>TJ Wangchuk</span></h1>
+
+      <p class="hero-description">
+        I am a student at the Academy of Computer and Information Sciences with interests in
+        software development, cybersecurity, healthcare technology, data operations, and leadership.
+        I enjoy building projects that connect technology with real-world service.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="primary-btn" onclick="scrollToSection('projects')">View Projects</button>
+        <button class="secondary-btn" onclick="scrollToSection('resume')">View Resume</button>
+        <button class="secondary-btn" onclick="emailMe()">Email Me</button>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <h3>Quick Highlights</h3>
+      <p>500+ EMS Service Hours</p>
+      <p>Varsity Golf Team Captain</p>
+      <p>Top 25 / 200 Garden State CTF</p>
+      <p>Life Scout & Eagle Candidate</p>
+      <p>3.88 Unweighted GPA</p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <p class="section-label">About Me</p>
+    <h2>Technology, service, leadership, and discipline.</h2>
+
+    <p>
+      I am a motivated student from Randolph, New Jersey, studying at the Academy of Computer
+      and Information Sciences at Morris County School of Technology. I am interested in using
+      computer science to solve problems in healthcare, education, sports, cybersecurity, and operations.
+    </p>
+
+    <p>
+      My background includes programming, EMS volunteering, golf, lifeguarding, swim instruction,
+      Boy Scouts leadership, and international service. These experiences have taught me how to
+      communicate, stay calm under pressure, lead teams, and solve problems.
+    </p>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <h3>3.88</h3>
+        <p>Unweighted GPA</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>500+</h3>
+        <p>EMS Hours</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>120</h3>
+        <p>Internship Hours Goal</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>Top 25</h3>
+        <p>Garden State CTF</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section dark-section">
+    <p class="section-label">Projects</p>
+    <h2>Project Showcase</h2>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <div class="project-icon">🗺️</div>
+        <h3>Deadly Desert Map</h3>
+        <p>
+          A visual danger-map demo that computes deadly spots from a numeric grid and shows
+          both the original numbers and deadly marks in the browser.
+        </p>
+        <span>Java • JavaScript • Data Visualization</span>
+
+        <div class="project-buttons">
+          <button onclick="window.open('projects/deadly-desert/details.html','_blank')">Details</button>
+          <button onclick="openDeadly()">Open Demo</button>
+          <button onclick="openDeadlyCode()">View Java</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🏌️</div>
+        <h3>Congressional App</h3>
+        <p>
+          A playable Golf Guru demo inspired by your React app, with profile setup, club distance planning,
+          hole distance recommendations, and a scorecard tracker.
+        </p>
+        <span>JavaScript • Interactive Web App • Game Demo</span>
+
+        <div class="project-buttons">
+          <button onclick="window.open('projects/congressional-app/details.html','_blank')">Details</button>
+          <button onclick="openCongressional()">Open Demo</button>
+          <button onclick="openCongressionalCode()">View App Source</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🏥</div>
+        <h3>EMS Urgency Predictor</h3>
+        <p>
+          A health-tech demonstration that predicts emergency urgency level from patient
+          symptoms and vitals, with a Python training script and browser prediction demo.
+        </p>
+        <span>Python • Machine Learning • Healthcare</span>
+
+        <div class="project-buttons">
+          <button onclick="window.open('projects/ems-urgency/details.html','_blank')">Details</button>
+          <button onclick="openEMS()">Open Demo</button>
+          <button onclick="openEMSPy()">View Python</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🏫</div>
+        <h3>Classroom Finder</h3>
+        <p>
+          A searchable teacher directory that loads local data from a text file and lets users
+          find teachers by name, room, or building.
+        </p>
+        <span>JavaScript • File Parsing • Search UI</span>
+
+        <div class="project-buttons">
+          <button onclick="window.open('projects/classroom/details.html','_blank')">Details</button>
+          <button onclick="openClassroom()">Open Demo</button>
+          <button onclick="openClassroomCode()">View Source</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <p class="section-label">Experience</p>
+    <h2>Leadership & Service</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-card">
+        <h3>Randolph Rescue Squad</h3>
+        <h4>Junior EMS Volunteer</h4>
+        <p>
+          Completed 500+ hours of service while developing skills in communication,
+          teamwork, professionalism, and emergency response.
+        </p>
+      </div>
+
+      <div class="timeline-card">
+        <h3>Randolph YMCA</h3>
+        <h4>Swim Instructor</h4>
+        <p>
+          Teach children swimming technique, confidence, and water safety in a supportive
+          learning environment.
+        </p>
+      </div>
+
+      <div class="timeline-card">
+        <h3>Randolph High School Golf</h3>
+        <h4>Varsity Captain</h4>
+        <p>
+          Served as a team leader and top varsity golfer, earning First Team All-Conference
+          and Rookie of the Year.
+        </p>
+      </div>
+
+      <div class="timeline-card">
+        <h3>Boy Scouts of America</h3>
+        <h4>Life Scout & Eagle Candidate</h4>
+        <p>
+          Held leadership roles including SPL, ASPL, Patrol Leader, and Assistant Patrol Leader.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="resume" class="section resume-section">
+    <p class="section-label">Resume</p>
+    <h2>Resume Snapshot</h2>
+
+    <div class="resume-grid">
+
+      <div class="resume-card">
+        <h3>Education</h3>
+        <p>
+          Morris County School of Technology<br>
+          Academy of Computer and Information Sciences<br>
+          GPA: 3.88 UW
+        </p>
+      </div>
+
+      <div class="resume-card">
+        <h3>Technical Skills</h3>
+        <p>
+          Java, C++, Python, HTML, CSS, JavaScript, cybersecurity basics,
+          machine learning, data analysis, and problem-solving.
+        </p>
+      </div>
+
+      <div class="resume-card">
+        <h3>Certifications</h3>
+        <p>
+          BLS Certified<br>
+          CPR Certified<br>
+          EMT School — Summer 2026
+        </p>
+      </div>
+
+      <div class="resume-card">
+        <h3>Career Interests</h3>
+        <p>
+          Healthcare technology, software development, data operations,
+          cybersecurity, and medical innovation.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="resume-actions">
+      <button class="primary-btn" onclick="downloadResume()">Open Resume PDF</button>
+      <button class="secondary-btn" onclick="emailMe()">Contact Me</button>
+    </div>
+
+    <div class="resume-preview">
+      <iframe src="resume.pdf"></iframe>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <p class="section-label">Contact</p>
+    <h2>Let’s connect.</h2>
+
+    <p>
+      I am interested in internships, technology projects, healthcare innovation,
+      cybersecurity, software development, and leadership opportunities.
+    </p>
+
+    <div class="contact-box">
+      <p><strong>School Email:</strong> thuksey.wangchuk@mcvts.org</p>
+      <p><strong>Personal Email:</strong> thukseyw@gmail.com</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tj-wangchuk-3869b3380" target="_blank" style="color:#93c5fd; text-decoration:none;">linkedin.com/in/tj-wangchuk-3869b3380</a></p>
+      <p><strong>Resume:</strong> Available via the resume button above.</p>
+    </div>
+
+    <div class="contact-buttons">
+      <button onclick="emailMe()" class="primary-btn">Email Me</button>
+      <button onclick="openLinkedIn()" class="secondary-dark-btn">LinkedIn</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 TJ Wangchuk. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

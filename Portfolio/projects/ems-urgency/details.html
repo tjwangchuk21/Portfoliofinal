@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EMS Urgency Predictor Details</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h2 class="logo">EMS Urgency Details</h2>
+    <nav class="nav-links">
+      <button onclick="window.close()">Close</button>
+    </nav>
+  </header>
+
+  <main class="section">
+    <p class="section-label">Project Details</p>
+    <h2>EMS Urgency Predictor</h2>
+
+    <div class="project-card">
+      <h3>Problem</h3>
+      <p>This project predicts urgency levels for emergency patients from vital signs and symptoms. It supports faster triage decisions by estimating whether a case is Low, Medium, or High urgency.</p>
+
+      <h3>Solution</h3>
+      <p>A Decision Tree model is trained using sample EMS data. The browser demo uses a heuristic that mirrors the model's behavior, allowing visitors to test patient inputs instantly and understand the prediction flow.</p>
+
+      <h3>Tech stack</h3>
+      <ul>
+        <li>Python</li>
+        <li>Scikit-learn</li>
+        <li>Pandas</li>
+        <li>HTML / CSS / JavaScript</li>
+      </ul>
+
+      <h3>Key features</h3>
+      <ul>
+        <li>EMS symptom and vital input form</li>
+        <li>Urgency prediction result display</li>
+        <li>Downloadable Python training script</li>
+      </ul>
+
+      <h3>Reflection</h3>
+      <p>This project demonstrates applied machine learning for healthcare. It shows how to build a model from data, evaluate it, and then present a user-friendly demo that explains the prediction experience.</p>
+
+      <div class="project-buttons">
+        <button class="primary-btn" onclick="window.open('index.html','_blank')">Open Demo</button>
+        <button class="secondary-btn" onclick="window.open('ems_predictor.py','_blank')">View Python Code</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

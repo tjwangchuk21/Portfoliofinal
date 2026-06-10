@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Congressional App - Golf Guru</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h2 class="logo">Congressional App</h2>
+    <nav class="nav-links">
+      <button onclick="window.close()">Close</button>
+    </nav>
+  </header>
+
+  <main class="section">
+    <p class="section-label">Golf Guru Game</p>
+    <h2>Interactive Golf Practice Demo</h2>
+
+    <div style="max-width:960px;">
+      <div id="app" class="project-card" style="padding:24px;"></div>
+
+      <div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
+        <button class="primary-btn" id="viewSourceBtn">View App Source</button>
+        <button class="secondary-btn" id="showCodeBtn">Show Demo Code</button>
+      </div>
+
+      <div id="codeBlock" style="margin-top:20px; display:none;">
+        <h3>Demo Code</h3>
+        <pre id="codeText" style="white-space: pre-wrap; background:#111827; color:#f8fafc; padding:16px; border-radius:12px; overflow-x:auto;"></pre>
+      </div>
+    </div>
+  </main>
+
+  <script src="demo.js"></script>
+</body>
+</html>

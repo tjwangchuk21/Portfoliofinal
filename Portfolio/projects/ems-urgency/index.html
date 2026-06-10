@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EMS Urgency Predictor - Demo</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h2 class="logo">EMS Urgency Predictor</h2>
+    <nav class="nav-links">
+      <button onclick="window.close()">Close</button>
+    </nav>
+  </header>
+
+  <main class="section">
+    <p class="section-label">EMS Demo</p>
+    <h2>Predict Urgency (Approximation)</h2>
+
+    <div style="max-width:900px;">
+      <div id="form" style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;">
+        <label>Age<input id="age" type="number" value="68" /></label>
+        <label>Breathing Problem<select id="breathing_problem"><option value="1">Yes</option><option value="0">No</option></select></label>
+        <label>Chest Pain<select id="chest_pain"><option value="1">Yes</option><option value="0">No</option></select></label>
+        <label>Oxygen Level<input id="oxygen_level" type="number" value="86" /></label>
+        <label>Heart Rate<input id="heart_rate" type="number" value="128" /></label>
+        <label>Blood Pressure<input id="blood_pressure" type="number" value="170" /></label>
+        <label>Pain Level<input id="pain_level" type="number" value="8" min="0" max="10" /></label>
+        <label>Previous Conditions<select id="previous_conditions"><option value="1">Yes</option><option value="0">No</option></select></label>
+      </div>
+
+      <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;">
+        <button class="primary-btn" id="predictBtn">Predict</button>
+        <button class="secondary-btn" id="resetBtn">Reset</button>
+        <button class="secondary-btn" id="viewPy">View Python Script</button>
+      </div>
+
+      <div id="result" style="margin-top:18px;"></div>
+
+      <p style="margin-top:30px;color:#6b7280;font-weight:700;">Note: The in-browser demo uses a simple heuristic to approximate the model. For full model training and results, run the provided Python script.</p>
+    </div>
+  </main>
+
+  <script src="ems.js"></script>
+</body>
+</html>

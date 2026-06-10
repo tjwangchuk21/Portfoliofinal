@@ -1,0 +1,11 @@
+/* Minimal local styles for Classroom Finder */
+
+body { background: #f8fafc; }
+
+.navbar { background: rgba(255,255,255,0.95); }
+
+.section { padding: 40px 8%; }
+
+.stat-card { padding: 18px; border-radius: 12px; background: white; border: 1px solid #e5e7eb; box-shadow: 0 8px 18px rgba(15,23,42,0.06); }
+
+input { font-size: 1rem; }

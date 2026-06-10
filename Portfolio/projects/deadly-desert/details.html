@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Deadly Desert Map Details</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h2 class="logo">Deadly Desert Details</h2>
+    <nav class="nav-links">
+      <button onclick="window.close()">Close</button>
+    </nav>
+  </header>
+
+  <main class="section">
+    <p class="section-label">Project Details</p>
+    <h2>Deadly Desert Map</h2>
+
+    <div class="project-card">
+      <h3>Problem</h3>
+      <p>This project analyzes a desert grid and identifies dangerous locations where the values around a cell indicate a deadly trap. It helps visualize risk across a map and count the total dangerous points.</p>
+
+      <h3>Solution</h3>
+      <p>The web demo loads a static grid, computes adjacent-value sums, and marks cells as deadly when the sum exceeds a threshold. The browser output shows both the original numeric map and the deadly map together.</p>
+
+      <h3>Tech stack</h3>
+      <ul>
+        <li>Java (original logic)</li>
+        <li>JavaScript (browser demo)</li>
+        <li>HTML / CSS (UI)</li>
+      </ul>
+
+      <h3>Key features</h3>
+      <ul>
+        <li>Interactive threshold control</li>
+        <li>Side-by-side original and deadly map views</li>
+        <li>Deadly spot counter</li>
+        <li>Source code available in `Main.java`</li>
+      </ul>
+
+      <h3>Reflection</h3>
+      <p>This project demonstrates how to translate algorithmic map analysis into a user-friendly visualization. It reinforces array processing, neighbor-based decision logic, and presenting results clearly for end users.</p>
+
+      <div class="project-buttons">
+        <button class="primary-btn" onclick="window.open('index.html','_blank')">Open Demo</button>
+        <button class="secondary-btn" onclick="window.open('Main.java','_blank')">View Java Code</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

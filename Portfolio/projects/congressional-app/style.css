@@ -1,0 +1,9 @@
+body { background: #f6f6ff; }
+
+.section { padding: 32px 8%; }
+
+.demo-input { width: 160px; padding: 10px 12px; border-radius: 10px; border: 1px solid #d1d5db; }
+
+.project-card { background: #eef2ff; }
+
+pre { font-family: Menlo, Monaco, 'Courier New', monospace; font-size: 0.95rem; line-height: 1.5; }
